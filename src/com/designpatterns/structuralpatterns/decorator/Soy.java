@@ -1,0 +1,26 @@
+package com.designpatterns.structuralpatterns.decorator;
+
+/**
+ * <p>
+ * 4. ConcreteDecorator
+ * <p>
+ * Reference : Head-First-Design-Patterns
+ *
+ */
+public class Soy extends CondimentDecorator {
+	Beverage beverage;
+
+	public Soy(Beverage beverage) {
+		this.beverage = beverage;
+	}
+
+	@Override
+	public String getDescription() {
+		return beverage.getDescription() + ", Soy";
+	}
+
+	@Override
+	public double cost() {
+		return .15 + beverage.cost();
+	}
+}
