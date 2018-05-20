@@ -7,9 +7,15 @@ package com.designpatterns.creationalpatterns.simplefactory;
  *
  */
 public class PizzaStore {
+	/**
+	 * 工厂类，负责处理创建对象的具体细节
+	 */
 	SimplePizzaFactory factory;
 	 
 	public PizzaStore(SimplePizzaFactory factory) { 
+		this.factory = factory;
+	}
+	public void setFactory(SimplePizzaFactory factory) {
 		this.factory = factory;
 	}
  

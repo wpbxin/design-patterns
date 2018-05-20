@@ -8,6 +8,7 @@ package com.designpatterns.creationalpatterns.simplefactory;
 
 public class PizzaTestApp {
 	public static void main(String[] args) {
+		//创建工厂
 		SimplePizzaFactory factory = new SimplePizzaFactory();
 		PizzaStore pizzaStore = new PizzaStore(factory);
 		

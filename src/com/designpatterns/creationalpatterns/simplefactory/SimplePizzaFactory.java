@@ -14,6 +14,12 @@ package com.designpatterns.creationalpatterns.simplefactory;
  */
 
 public class SimplePizzaFactory {
+	
+	/**
+	 * 根据实际类型创建相应的对象
+	 * @param type
+	 * @return
+	 */
 	public Pizza createPizza(String type) {
 		Pizza pizza = null;
 
