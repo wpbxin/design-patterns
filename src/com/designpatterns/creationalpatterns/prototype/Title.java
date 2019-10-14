@@ -32,8 +32,7 @@ public class Title implements Cloneable{
 	@Override
 	public Title clone() throws CloneNotSupportedException {
 		Title title = (Title)super.clone();
-		title.setPre(new String(this.getPre()));
-		title.setTitle(new String(this.getTitle()));
+		// 不可变属性本身会返回引用副本，无需操作
 		return title;
 	}
 }

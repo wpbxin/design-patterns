@@ -42,9 +42,8 @@ public class Name implements Cloneable{
 	@Override
 	public Name clone() throws CloneNotSupportedException {
 		Name nameClone = (Name)super.clone();
-		nameClone.setFirstName(new String(this.getFirstName()));
-		nameClone.setLastName(new String(this.getLastName()));
 		nameClone.setTitle(this.getTitle().clone());
+		// 不可变属性本身会返回引用副本，无需操作
 		return nameClone;
 	}
 
