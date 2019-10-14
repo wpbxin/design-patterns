@@ -1,4 +1,4 @@
-package headfirst.designpatterns.strategy;
+package com.designpatterns.behavioralpatterns.strategy;
 
 public class MiniDuckSimulator {
  
